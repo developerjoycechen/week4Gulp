@@ -1,0 +1,28 @@
+@mixin hide-text{
+    text-indent: 101%;
+    overflow: hidden;
+    word-spacing: nowrap;
+}
+@mixin bg-center{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+@mixin object-self-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+@mixin tablet{
+    @media screen and (max-width: 991px) {
+        @content
+    }
+}
+@mixin mobile{
+    @media screen and (max-width:575px){
+        @content
+    }
+}
+ 
+

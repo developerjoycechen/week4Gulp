@@ -1,0 +1,259 @@
+/* start header */
+.header{
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/banner.png);
+    @include mobile(){
+       background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/banner-sm.png) 
+    }
+    @include bg-center;
+    .h5{
+        @include tablet(){
+            font-size: $font-h7;
+            /* font-size: 20px; */
+        }
+        @include mobile(){
+            font-size: $font-p1;
+            /* font-size: 16px; */
+        }        
+    }
+    .h3{
+        @include tablet(){
+            font-size: $font-h4;
+            /* font-size: 48px; */
+        }
+        @include mobile(){
+            font-size: 2rem;
+            /* font-size: 32px; */
+        }        
+    }
+}
+/* end header */
+
+/* start feature */
+.feature{
+    &-icon{
+        width: 100px;
+        height: 100px;
+        @include tablet(){
+            width: 80px;
+            height: 80px;
+        }
+    }
+    .h4{
+        @include tablet(){
+            font-size: 2rem;
+            /* font-size: 32px; */            
+        }
+        @include mobile(){
+            font-size: $font-h6;
+            /* font-size: 24px; */         
+        }
+    }
+    .h6{
+        @include tablet(){
+            font-size: $font-h7;
+            /* font-size: 20px; */            
+        }
+    }    
+}
+/* end feature */
+
+/* start classic */
+.classic{
+    .h4{
+        @include mobile(){
+            font-size: $font-h7;
+            /* font-size: 20px; */
+    }
+    .h4-md{
+        @include tablet(){
+            font-size: 1.75rem;
+            /* font-size: 28px; */            
+        }
+    }
+    .h6{
+        @include tablet(){
+            font-size: $font-h7;
+            /* font-size: 20px; */            
+        }
+    }
+    &-icon{
+        width: 48px;
+        height: 48px;
+        @include tablet(){
+            width: 32px;
+            height: 32px;
+        }
+    }
+    &-item{
+        @include mobile(){
+            position: relative;            
+        }
+    }
+    &-item-group{
+        @include mobile(){
+            @include object-self-center;            
+        }
+    }
+    .text-color-primary{
+        @include mobile(){
+            color: #fff;            
+        }
+    }
+}
+/* end classic */
+
+/* start designer */
+.designer{
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/bg.png);
+    @include bg-center; 
+    .h4{
+        @include tablet(){
+            font-size: 2rem;            
+        }
+        @include mobile(){
+            font-size: $font-h7;
+            /* font-size: 20px; */          
+        }
+    }
+    .h2{
+        @include tablet(){
+            font-size: 2rem; 
+        }
+    &-item-double{
+        position: relative;
+        h2{
+            @include object-self-center;
+            white-space: nowrap;
+        }  
+    }
+    &-item-double::before{
+        content:" ";
+        display: block;
+        width: 95%;
+        height: 100%;
+        background-color: #fff;
+        opacity: 0.5;
+        @include object-self-center;
+    }
+    &-item-youth{
+        position: relative;
+        h2{
+            @include object-self-center;      
+        }
+    }
+    &-item-youth::before{
+        content:" ";
+        display: block;
+        width: 95%;
+        height: 100%;
+        background-color: #fff;
+        opacity: 0.5;
+        @include object-self-center;
+    }
+}
+/* end designer */
+
+/* start recommend */
+.recommend{
+    .h4{
+        @include tablet(){
+            font-size: 2rem;
+            /* font-size: 32px; */            
+        }
+        @include mobile(){
+            font-size: $font-h7;
+            /* font-size: 20px; */        
+        }
+    }
+}
+/* end recommend */
+
+/* start contact */
+.contact{
+    .h4{
+        @include tablet(){
+            font-size: 2rem;
+            /* font-size: 32px; */            
+        }
+        @include mobile(){
+            font-size: $font-h7;
+            /* font-size: 20px; */         
+        }
+    }
+    .h7{
+        @include tablet(){
+            font-size: $font-p1;
+            /* font-size: 16px; */            
+        }
+    }
+    .p1{
+        @include tablet(){
+            font-size: $font-p2;
+            /* font-size: 14px; */            
+        }
+    } 
+}
+/* start 客製化checkbox  */
+/* Customize the label (the container) */
+.contact-container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 48px;
+    cursor: pointer;
+    font-size: $font-p1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* Hide the browser's default checkbox */
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+}
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border: 2px solid #000;
+}
+/* On mouse-over, add a grey background color */
+.contact-container:hover input ~ .checkmark {
+    background-color: transparent;
+}
+/* When the checkbox is checked, add a blue background */
+.contact-container input:checked ~ .checkmark {
+    background-color: #000;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Show the checkmark when checked */
+.contact-container input:checked ~ .checkmark:after {
+    display: block;
+}
+/* Style the checkmark/indicator */
+.contact-container .checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 8px;
+    height: 13px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/* end 客製化checkbox  */
+/* end contact */
