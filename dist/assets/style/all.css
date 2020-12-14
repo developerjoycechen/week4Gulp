@@ -1,0 +1,590 @@
+@charset "UTF-8";
+.body {
+  font-family: 'Roboto','Noto Sans TC', sans-serif;
+  list-style: none; }
+
+ol, ul {
+  list-style: none; }
+
+ul {
+  padding: 0px; }
+
+a {
+  text-decoration: none;
+  display: block; }
+
+a:hover {
+  text-decoration: none; }
+
+input, textarea {
+  background-color: transparent; }
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding-right: -15px;
+  padding-left: -15px; }
+
+.inner-container {
+  max-width: 730px;
+  margin: 0 auto; }
+  @media screen and (max-width: 991px) {
+    .inner-container {
+      max-width: 450px; } }
+  @media screen and (max-width: 575px) {
+    .inner-container {
+      max-width: 345px; } }
+
+.bd-sixth {
+  border: 1px solid #DEE2E6; }
+
+.bd-black {
+  border: 1px solid #000000; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+.bg-color-primary {
+  background-color: #AA0601; }
+
+.bg-color-third {
+  background-color: #FBF2F2; }
+
+.text-color-primary {
+  color: #AA0601; }
+
+.text-color-secondary {
+  color: #650300; }
+
+.text-color-fourth {
+  color: #212529; }
+
+.text-color-fifth {
+  color: #707070; }
+
+.fw-rg {
+  font-weight: 400; }
+
+.fw-md {
+  font-weight: 500; }
+
+.fw-b {
+  font-weight: 700; }
+
+.fw-bla {
+  font-weight: 900; }
+
+.fs-italic {
+  font-style: italic; }
+
+.h2 {
+  font-size: 4.5rem;
+  /* font-size: 72px; */ }
+
+.h3 {
+  font-size: 4rem;
+  /* font-size: 64px; */ }
+
+.h4 {
+  font-size: 3rem;
+  /* font-size: 48px; */ }
+
+.h5 {
+  font-size: 2.25rem;
+  /* font-size: 36px; */ }
+
+.h6 {
+  font-size: 1.5rem;
+  /* font-size: 24px; */ }
+
+.h7 {
+  font-size: 1.25rem;
+  /* font-size: 20px; */ }
+
+.p1 {
+  font-size: 1rem;
+  /* font-size: 16px; */ }
+
+.p2 {
+  font-size: 0.875rem;
+  /* font-size: 14px; */ }
+
+@media screen and (max-width: 575px) {
+  .px-6 {
+    padding-left: 56px;
+    padding-right: 56px; } }
+
+@media screen and (max-width: 991px) {
+  .px-sm-7 {
+    padding-left: 64px;
+    padding-right: 64px; } }
+
+.px-10 {
+  padding-left: 136px;
+  padding-right: 136px; }
+
+.px-lg-10 {
+  padding-left: 136px;
+  padding-right: 136px; }
+
+.px-0
+.pt-7 {
+  padding-top: 64px; }
+
+.pt-lg-7 {
+  padding-top: 64px; }
+
+.pt-lg-11 {
+  padding-top: 160px; }
+
+@media screen and (max-width: 575px) {
+  .pt-11 {
+    padding-top: 160px; } }
+
+.pt-sm-12 {
+  padding-top: 360px; }
+
+.pr-6 {
+  padding-right: 56px; }
+
+.pr-lg-6 {
+  padding-right: 56px; }
+
+.pb-8 {
+  padding-bottom: 80px; }
+
+.pb-lg-8 {
+  padding-bottom: 80px; }
+
+.pb-lg-11 {
+  padding-bottom: 160px; }
+
+@media screen and (max-width: 575px) {
+  .pb-11 {
+    padding-bottom: 160px; } }
+
+.pb-sm-12 {
+  padding-bottom: 360px; }
+
+.pl-lg-9 {
+  padding-left: 88px; }
+
+.mr-7 {
+  margin-right: 64px; }
+
+.mb-lg-7 {
+  margin-bottom: 64px; }
+
+/* start nav */
+nav h1 a {
+  background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/logo.png);
+  width: 80px;
+  height: 49px;
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  word-spacing: nowrap; }
+
+@media screen and (max-width: 575px) {
+  nav .h6 {
+    font-size: 1.25rem;
+    /* font-size: 20px; */ } }
+
+@media screen and (max-width: 575px) {
+  nav ul {
+    max-width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+
+@media screen and (max-width: 575px) {
+  nav ul li a {
+    display: block; } }
+
+@media screen and (max-width: 575px) {
+  nav .nav-item {
+    width: 50%; } }
+
+@media screen and (max-width: 575px) {
+  nav .nav-item a {
+    margin-bottom: 0px; } }
+
+@media screen and (max-width: 575px) {
+  .bd-white {
+    border: 1px solid #fff; } }
+
+/* end nav */
+/* start footer */
+.footer-mdeia-icon {
+  width: 48px;
+  height: 48px; }
+  @media screen and (max-width: 991px) {
+    .footer-mdeia-icon {
+      width: 24px;
+      height: 24px; } }
+
+.footer-icon {
+  width: 44px;
+  height: 44px; }
+  @media screen and (max-width: 991px) {
+    .footer-icon {
+      width: 24px;
+      height: 24px; } }
+  @media screen and (max-width: 575px) {
+    .footer-icon {
+      width: 20px;
+      height: 20px; } }
+
+.info {
+  border-bottom: 1px solid #fff; }
+
+@media screen and (max-width: 991px) {
+  .footer .h5 {
+    font-size: 1.25rem;
+    /* font-size: 20px; */ } }
+
+@media screen and (max-width: 575px) {
+  .footer .h5 {
+    font-size: 1rem;
+    /* font-size: 16px; */ } }
+
+@media screen and (max-width: 575px) {
+  .logo {
+    width: 46px;
+    height: 28px; } }
+
+/* end footer */
+/* start header */
+.header_index {
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/banner.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media screen and (max-width: 575px) {
+    .header_index {
+      background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/banner-sm.png"); } }
+  @media screen and (max-width: 991px) {
+    .header_index .h5 {
+      font-size: 1.25rem;
+      /* font-size: 20px; */ } }
+  @media screen and (max-width: 575px) {
+    .header_index .h5 {
+      font-size: 1rem;
+      /* font-size: 16px; */ } }
+  @media screen and (max-width: 991px) {
+    .header_index .h3 {
+      font-size: 3rem;
+      /* font-size: 48px; */ } }
+  @media screen and (max-width: 575px) {
+    .header_index .h3 {
+      font-size: 2rem;
+      /* font-size: 32px; */ } }
+
+/* end header */
+/* start feature */
+.feature-icon {
+  width: 100px;
+  height: 100px; }
+  @media screen and (max-width: 991px) {
+    .feature-icon {
+      width: 80px;
+      height: 80px; } }
+
+@media screen and (max-width: 991px) {
+  .feature .h4 {
+    font-size: 2rem;
+    /* font-size: 32px; */ } }
+
+@media screen and (max-width: 575px) {
+  .feature .h4 {
+    font-size: 1.5rem;
+    /* font-size: 24px; */ } }
+
+@media screen and (max-width: 991px) {
+  .feature .h6 {
+    font-size: 1.25rem;
+    /* font-size: 20px; */ } }
+
+/* end feature */
+/* start classic */
+@media screen and (max-width: 575px) {
+  .classic .h4 {
+    font-size: 1.25rem;
+    /* font-size: 20px; */ } }
+
+@media screen and (max-width: 991px) {
+  .classic .h4-md {
+    font-size: 1.75rem;
+    /* font-size: 28px; */ } }
+
+@media screen and (max-width: 991px) {
+  .classic .h6 {
+    font-size: 1.25rem;
+    /* font-size: 20px; */ } }
+
+.classic-icon {
+  width: 48px;
+  height: 48px; }
+  @media screen and (max-width: 991px) {
+    .classic-icon {
+      width: 32px;
+      height: 32px; } }
+
+@media screen and (max-width: 575px) {
+  .classic-item {
+    position: relative; } }
+
+@media screen and (max-width: 575px) {
+  .classic-item-group {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); } }
+
+@media screen and (max-width: 575px) {
+  .classic .text-color-primary {
+    color: #fff; } }
+
+/* end classic */
+/* start designer */
+.designer {
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media screen and (max-width: 991px) {
+    .designer .h4 {
+      font-size: 2rem; } }
+  @media screen and (max-width: 575px) {
+    .designer .h4 {
+      font-size: 1.25rem;
+      /* font-size: 20px; */ } }
+  @media screen and (max-width: 991px) {
+    .designer .h2 {
+      font-size: 2rem; } }
+  .designer-item-double {
+    position: relative; }
+    .designer-item-double h2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      white-space: nowrap; }
+  .designer-item-double::before {
+    content: " ";
+    display: block;
+    width: 95%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  .designer-item-youth {
+    position: relative; }
+    .designer-item-youth h2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+  .designer-item-youth::before {
+    content: " ";
+    display: block;
+    width: 95%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+
+/* end designer */
+/* start recommend */
+@media screen and (max-width: 991px) {
+  .recommend .h4 {
+    font-size: 2rem;
+    /* font-size: 32px; */ } }
+
+@media screen and (max-width: 575px) {
+  .recommend .h4 {
+    font-size: 1.25rem;
+    /* font-size: 20px; */ } }
+
+/* end recommend */
+/* start contact */
+@media screen and (max-width: 991px) {
+  .contact .h4 {
+    font-size: 2rem;
+    /* font-size: 32px; */ } }
+
+@media screen and (max-width: 575px) {
+  .contact .h4 {
+    font-size: 1.25rem;
+    /* font-size: 20px; */ } }
+
+@media screen and (max-width: 991px) {
+  .contact .h7 {
+    font-size: 1rem;
+    /* font-size: 16px; */ } }
+
+@media screen and (max-width: 991px) {
+  .contact .p1 {
+    font-size: 0.875rem;
+    /* font-size: 14px; */ } }
+
+/* start 客製化checkbox  */
+/* Customize the label (the container) */
+.contact-container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 48px;
+  cursor: pointer;
+  font-size: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Hide the browser's default checkbox */ }
+  .contact-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0; }
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border: 2px solid #000; }
+
+/* On mouse-over, add a grey background color */
+.contact-container:hover input ~ .checkmark {
+  background-color: transparent; }
+
+/* When the checkbox is checked, add a blue background */
+.contact-container input:checked ~ .checkmark {
+  background-color: #000; }
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
+/* Show the checkmark when checked */
+.contact-container input:checked ~ .checkmark:after {
+  display: block; }
+
+/* Style the checkmark/indicator */
+.contact-container .checkmark:after {
+  left: 4px;
+  top: 1px;
+  width: 8px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+/* end 客製化checkbox  */
+/* end contact */
+/* start header */
+.header_location_2 {
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/week4/blog-4.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media screen and (max-width: 575px) {
+    .header_location_2 {
+      background-image: url("https://hexschool.github.io/webLayoutTraining1st/week4/blog-4.png"); } }
+  @media screen and (max-width: 991px) {
+    .header_location_2 .h5 {
+      font-size: 1.25rem;
+      /* font-size: 20px; */ } }
+  @media screen and (max-width: 575px) {
+    .header_location_2 .h5 {
+      font-size: 1rem;
+      /* font-size: 16px; */ } }
+  @media screen and (max-width: 991px) {
+    .header_location_2 .h3 {
+      font-size: 3rem;
+      /* font-size: 48px; */ } }
+  @media screen and (max-width: 575px) {
+    .header_location_2 .h3 {
+      font-size: 2rem;
+      /* font-size: 32px; */ } }
+  @media screen and (max-width: 991px) {
+    .header_location_2 .header_icon {
+      max-width: 75%; } }
+  @media screen and (max-width: 575px) {
+    .header_location_2 .header_icon {
+      max-width: 50%; } }
+
+/* end header */
+@media screen and (max-width: 991px) {
+  .branch-menu .h6 {
+    font-size: 1rem;
+    /* font-size: 16px; */ } }
+
+@media screen and (max-width: 575px) {
+  .branch-menu .h6 {
+    font-size: 0.875rem;
+    /* font-size: 14px; */ } }
+
+.branch-menu .btn-primary, .branch-menu .btn-primary:hover {
+  color: #212529;
+  background-color: #fff;
+  border-color: #fff; }
+  @media screen and (max-width: 991px) {
+    .branch-menu .btn-primary, .branch-menu .btn-primary:hover {
+      font-size: 1rem;
+      /* font-size: 16px; */ } }
+  @media screen and (max-width: 575px) {
+    .branch-menu .btn-primary, .branch-menu .btn-primary:hover {
+      font-size: 0.875rem;
+      /* font-size: 14px; */ } }
+
+.branch-menu .icon {
+  width: 20px;
+  height: 20px; }
+
+@media screen and (max-width: 991px) {
+  .branch-info .h6 {
+    font-size: 1rem;
+    /* font-size: 16px; */ } }
+
+@media screen and (max-width: 575px) {
+  .branch-info .h6 {
+    font-size: 0.875rem;
+    /* font-size: 14px; */ } }
+
+@media screen and (max-width: 991px) {
+  .branch-info .h7 {
+    font-size: 0.875rem;
+    /* font-size: 14px; */ } }
+
+@media screen and (max-width: 575px) {
+  .branch-info .h7 {
+    font-size: 0.875rem;
+    /* font-size: 14px; */ } }
+
+/*# sourceMappingURL=all.css.map */
