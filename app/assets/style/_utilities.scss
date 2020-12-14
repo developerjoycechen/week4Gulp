@@ -94,6 +94,9 @@
 .pt-lg-7{
     padding-top: 64px;
 }
+.pt-lg-11{
+    padding-top: 160px;        
+}
 .pt-11{
     @include mobile(){
     padding-top: 160px;        
@@ -113,6 +116,9 @@
 }
 .pb-lg-8{
     padding-bottom: 80px;
+}
+.pb-lg-11{
+    padding-bottom: 160px; 
 }
 .pb-11{
     @include mobile(){

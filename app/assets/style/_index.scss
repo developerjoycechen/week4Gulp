@@ -1,5 +1,5 @@
 /* start header */
-.header{
+.header_index{
     background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/banner.png");
     @include mobile(){
        background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/banner-sm.png"); 
